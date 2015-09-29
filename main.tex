@@ -1,8 +1,6 @@
 % !TEX encoding = UTF-8
 % !TEX program = xelatex
 \documentclass[nofonts,UTF8,cs4size,a4paper,fancyhdr,fntef,hyperref,CJKchecksingle]{ctexart}
-%\documentclass[nofonts,UTF8,a4paper]{ctexart}
-% \includeonly{chapt3}
 
 
 \usepackage{xeCJK}
@@ -11,29 +9,15 @@
 \usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
 
 
-\setlength{\parindent}{2em}         	% 首行空两字
-\usepackage{indentfirst}             	% 首行缩进
+\setlength{\parindent}{2em}
+\usepackage{indentfirst}
 \usepackage{fontspec,xunicode,xltxtra}	
-\usepackage{bm}                      	% 数学公式中的黑斜体
+\usepackage{bm}
 \usepackage[colorlinks,linkcolor=red]{hyperref}
-% \setmainfont{Source Sans Pro}
-% \setsansfont{DejaVu Sans}
-% \setmonofont{DejaVu Sans Mono}
-% \setCJKmainfont{WenQuanYi Micro Hei}
-% \setCJKsansfont{WenQuanYi Micro Hei}
-\setCJKmonofont{WenQuanYi Micro Hei Mono}
+\usepackage{color}
+
+
+\setCJKmainfont{WenQuanYi Micro Hei Mono}
+\renewcommand{\baselinestretch}{1.25}
 \XeTeXlinebreaklocale="zh"
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
-
-\renewcommand{\baselinestretch}{1.25}
-
-\newtheorem{lemma}{\hspace{2em}Lemma}[section]
-
-\newtheorem{theorem}{\hspace{2em}Definition}[section]
-
-
-% \newtheorem{axiom}[definition]{\hspace{2em}公理}
-% \newtheorem{lemma}[definition]{\hspace{2em}引理}
-% \newtheorem{proposition}[definition]{\hspace{2em}命题}
-% \newtheorem{corollary}[definition]{\hspace{2em}推论}
-% \newtheorem{remark}{\hspace{2em}注}[chapter] 
